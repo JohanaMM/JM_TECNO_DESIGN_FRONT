@@ -1,4 +1,5 @@
 import React from "react";
+
 function inicio() {
   return (
     <>
@@ -6,4 +7,4 @@ function inicio() {
     </>
   );
 }
-export default inicio;
+export default inicio
