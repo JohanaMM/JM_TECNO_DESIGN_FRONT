@@ -1,9 +1,9 @@
 import React from "react";
 
-function inicio(){
+function talles(){
   return (
     <>
     </>
   );
 }
-export default inicio;
+export default talles;

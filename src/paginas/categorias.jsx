@@ -1,9 +1,9 @@
 import React from "react";
 
-function inicio(){
+function categorias(){
   return (
     <>
     </>
   );
 }
-export default inicio;
+export default categorias;

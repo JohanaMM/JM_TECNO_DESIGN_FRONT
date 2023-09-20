@@ -1,9 +1,9 @@
 import React from "react";
 
-function inicio(){
+function contacto(){
   return (
     <>
     </>
   );
 }
-export default inicio;
+export default contacto;
