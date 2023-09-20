@@ -1,9 +1,9 @@
 import React from "react";
 
-function inicio(){
+function dudas(){
   return (
     <>
     </>
   );
 }
-export default inicio;
+export default dudas;
