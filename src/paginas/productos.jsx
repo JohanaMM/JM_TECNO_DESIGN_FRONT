@@ -1,10 +1,9 @@
 import React from "react";
 
-function inicio() {
+function productos(){
   return (
     <>
-    INICIO
     </>
   );
 }
-export default inicio
+export default productos;
