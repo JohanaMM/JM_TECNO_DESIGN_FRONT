@@ -1,12 +1,12 @@
 import React from "react";
-import Inicio from "./paginas/inicio";
+import "../estilos/navbar.css"
 
-function prueba() {
+
+function navbar() {
   return (
     <>
-      <Inicio />
     </>
   );
 }
 
-export default prueba;
+export default navbar;
