@@ -1,0 +1,14 @@
+.cont-categorias{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.categoriaImg{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: #D3B2E3;
+    border-radius: 100px
+}
