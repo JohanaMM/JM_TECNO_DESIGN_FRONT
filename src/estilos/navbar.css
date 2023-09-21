@@ -1,0 +1,151 @@
+.logo {
+    width: 16vw;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-decoration: none !important;
+}
+
+.nav {
+    height: 20vh;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2833;
+}
+
+.nav1{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav>.nav-header {
+    width: 25%;
+    display: inline;
+    font-weight: bold;
+}
+
+.nav>.nav-header>.nav-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+    font-size: 19px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.nav-links p {
+    display: inline-block;
+    padding: 13px 15px 5px 15px;
+    text-decoration: none;
+    color: #D3B2E3;
+    font-size: 22px;
+    margin: 0px 8px;
+    font-weight: bolder;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+.nav-usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 25em;
+    height: 2em;
+    background-color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+::placeholder{
+    color: black;
+}
+
+@media (max-width:900px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding-top: 35px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: transparent;
+
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 50%;
+        background-color: #00000077;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 100px;
+        left: 305px;
+    }
+
+    .nav>.nav-links>p {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(40vh - 50px);
+        overflow-y: auto;
+    }
+
+    .nav-usuario {
+        width: 20%;
+    }
+}
