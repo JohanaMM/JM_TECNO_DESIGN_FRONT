@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from '../Componentes/navbar'
 import Imagen from '../image/images.png'
 import '../estilos/inicio.css'
 import Filtros from "../Componentes/filtros";
@@ -11,11 +10,8 @@ function inicio() {
   return (
     <>
       <div>
-        <Navbar />
-      </div>
-      <div>
         <p className="eslogan">Eleva tu moda con nuestros estampados únicos</p>
-        <img src={Imagen} className="contImg" alt="" />
+        <img src={Imagen} className="contImg" alt="img" />
         <p className="boton">Tu diseño a un click</p>
       </div>
       <div className="filtro">

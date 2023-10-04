@@ -13,7 +13,7 @@ function Navbar({ peliculas }) {
       <div className="nav">
         <div className="nav-header">
           <div className="nav-title">
-            <LinkRouter to={"/Home"}>
+            <LinkRouter to={"/Inicio"}>
               <img src={Logo} className='logo' alt="Logo" />
             </LinkRouter>
           </div>
@@ -22,7 +22,9 @@ function Navbar({ peliculas }) {
           <div className='nav1'>
             <Busqueda/>
             <div className='nav-usuario'>
-            <FaShoppingCart style={{ color: '#D3B2E3', fontSize:'30px' }} />
+              <LinkRouter to={"/Carrito"}>
+              <FaShoppingCart style={{ color: '#D3B2E3', fontSize:'30px', cursor:'pointer' }} />
+              </LinkRouter>
               <Avatar
                 sx={{
                   width: 40,
@@ -30,7 +32,8 @@ function Navbar({ peliculas }) {
                   color: '#1F2833',
                   marginLeft: '50px',
                   marginRight: '15px',
-                  backgroundColor:'#D3B2E3'
+                  backgroundColor:'#D3B2E3',
+                  cursor: 'pointer'
                 }}
                 alt="Avatar"
               />
