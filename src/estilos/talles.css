@@ -1,0 +1,13 @@
+.tallesContenedor{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.Talles{
+    width: 70vw;
+    height: 60vh;
+}
