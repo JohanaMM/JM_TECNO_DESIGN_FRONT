@@ -9,6 +9,7 @@ import Dudas from './paginas/dudas';
 import Contacto from './paginas/contacto';
 import Carrito from './paginas/carrito';
 import Perfil from './paginas/perfil';
+import Footer from './Componentes/footer';
 
 function JM_TD() {
   return (
@@ -25,6 +26,7 @@ function JM_TD() {
         <Route path="/Carrito" element={<Carrito />} />
         <Route path="/Perfil" element={<Perfil />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

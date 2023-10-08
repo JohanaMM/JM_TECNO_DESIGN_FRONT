@@ -3,6 +3,7 @@ import CarruselPopulares from "../Componentes/carrusel-populares";
 import ImagenP from '../image/foto.png'
 import Filtros from "../Componentes/filtros";
 import Categorias from "../Componentes/categorias";
+import ECommerceCard from "../Componentes/card";
 
 function productos() {
   return (
@@ -18,6 +19,9 @@ function productos() {
           <Filtros />
         </div>
         <Categorias />
+      </div>
+      <div>
+        <ECommerceCard />
       </div>
     </>
   );
