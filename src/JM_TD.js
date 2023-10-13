@@ -25,6 +25,7 @@ function JM_TD() {
         <Route path="/Contacto" element={<Contacto />} />
         <Route path="/Carrito" element={<Carrito />} />
         <Route path="/Perfil" element={<Perfil />} />
+        <h3>johana es la mejor por siempre y para siempre, tacho remacho, me cubro </h3>
       </Routes>
       <Footer/>
     </>
