@@ -1,38 +1,36 @@
-
-
-
-
 .footer-section {
     color: white;
     position: relative;
     background-color: #1F2833;
-    border-top-left-radius: 80px ;
-    border-top-right-radius: 80px ;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    bottom: 0;
 }
 
 .footer-widget-links {
-    margin: 30px;
     display: grid;
     margin-right: 120px;
-   
 }
 
 .footer-widget-text {
+    height: fit-content;
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
-    padding-top: 30px;
+    padding: 5px;
 }
 
 .footer-cta {
     border-bottom: 4px solid #D3B2E3;
+    padding-top: 5px;
 }
 
 .row {
-   margin: 30px;
+    margin: 10px;
     flex-direction: row;
     justify-content: left;
     align-items: center;
@@ -57,14 +55,14 @@
     cursor: pointer;
 }
 
-.footer-social-icon{
+.footer-social-icon {
     cursor: pointer;
-    display: grid ;
-    margin-left: 80px;
+    display: grid;
+    margin-left: 30px;
     align-content: center;
 }
 
-.footer-widget{
+.footer-widget {
     margin: 30px;
 }
 
@@ -72,7 +70,7 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -80,7 +78,7 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -93,11 +91,11 @@
 
 .subscribe-form {
     display: flex;
-    flex-direction:inherit;
+    flex-direction: inherit;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 16px;
+    padding-top: 30px;
 }
 
 .subscribe-form button {
@@ -110,7 +108,7 @@
 
 .copyright-area {
     width: 93vw;
-    padding: 25px 0;
+    padding-bottom: 5px;
 }
 
 .copyright-text p {
@@ -118,5 +116,3 @@
     font-size: 14px;
     color: #878787;
 }
-
-

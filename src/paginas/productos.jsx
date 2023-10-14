@@ -3,7 +3,8 @@ import CarruselPopulares from "../Componentes/carrusel-populares";
 import ImagenP from '../image/foto.png'
 import Filtros from "../Componentes/filtros";
 import Categorias from "../Componentes/categorias";
-import ECommerceCard from "../Componentes/card";
+import Tarjetas from "../Componentes/tarjetaCategoria";
+import '../estilos/productos.css'
 
 function productos() {
   return (
@@ -20,8 +21,13 @@ function productos() {
         </div>
         <Categorias />
       </div>
-      <div>
-        <ECommerceCard />
+      <div className="tarjetas-bd">
+        <Tarjetas />
+        <Tarjetas />
+        <Tarjetas />
+        <Tarjetas />
+        <Tarjetas />
+        <Tarjetas />
       </div>
     </>
   );

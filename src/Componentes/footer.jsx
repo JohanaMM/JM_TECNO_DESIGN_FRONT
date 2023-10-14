@@ -1,15 +1,7 @@
 import React from "react";
 import "../estilos/footer.css";
 import { Link as LinkRouter } from "react-router-dom";
-import {
-  FaMapMarkedAlt,
-  FaPhone,
-  FaEnvelopeOpen,
-  FaFacebook,
-  FaGoogle,
-  FaRegPaperPlane,
-  FaInstagram,
-} from "react-icons/fa";
+import {FaMapMarkedAlt, FaPhone, FaEnvelopeOpen, FaFacebook, FaTwitter, FaInstagram,} from "react-icons/fa";
 import Logo from "../image/logo.png";
 
 function Footer() {
@@ -21,18 +13,15 @@ function Footer() {
             <div className="row">
               <div className="col-xl-4 col-lg-4 mb-50">
                 <div className="footer-widget">
+                <div className="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Buscar" />
+                    </form>
+                  </div>
                   <div className="footer-logo">
                     <LinkRouter to={"/Inicio"}>
                       <img src={Logo} className="logo" alt="Logo" />
                     </LinkRouter>
-                  </div>
-                  <div className="subscribe-form">
-                    <form action="#">
-                      <input type="text" placeholder="Email Address" />
-                      <button>
-                        <FaRegPaperPlane style={{ fontSize: "15px" }} />
-                      </button>
-                    </form>
                   </div>
                   <div className="nav-links">
                     <LinkRouter to={"/Productos"}>
@@ -62,7 +51,7 @@ function Footer() {
                     </div>
                     <div className="col-xl-4 col-md-4 mb-30">
                     <div className="single-cta">
-                        <FaEnvelopeOpen style={{ fontSize: "30px" }} />
+                        <FaEnvelopeOpen style={{ fontSize: "25px" , marginBottom:'10px' }} />
                         <div className="cta-text">
                         <h4>E-mail</h4>
                         <span>mail@info.com</span>
@@ -71,7 +60,7 @@ function Footer() {
                     </div>
                     <div className="col-xl-4 col-md-4 mb-30">
                     <div className="single-cta">
-                        <FaPhone style={{ fontSize: "30px" }} />
+                        <FaPhone style={{ fontSize: "25px", marginBottom:'10px'  }} />
                         <div className="cta-text">
                         <h3>Contacto</h3>
                         <span>9876543210 0</span>
@@ -80,7 +69,7 @@ function Footer() {
                     </div>
                     <div className="col-xl-4 col-md-4 mb-30">
                     <div className="single-cta">
-                        <FaMapMarkedAlt style={{ fontSize: "30px" }} />
+                        <FaMapMarkedAlt style={{ fontSize: "25px", marginBottom:'10px'  }} />
                         <div className="cta-text">
                         <h4>Dirección</h4>
                         <span>1010 Avenue, sw 54321, chandigarh</span>
@@ -94,7 +83,7 @@ function Footer() {
                     </div>
                 <div className="col-xl-4 col-md-4 mb-30">    
                 <div className="single-cta">    
-                  <FaFacebook style={{fontSize: "30px"}}/>
+                  <FaFacebook style={{fontSize: "25px", marginBottom:'10px' }}/>
                 <div className="cta-text">
                     <h4>Facebook</h4>
                     <span>/jmtecnodesing</span>
@@ -102,14 +91,14 @@ function Footer() {
                 </div>
                 </div>
                 <div className="single-cta">    
-                  <FaInstagram style={{fontSize: "30px"}}/>
+                  <FaInstagram style={{fontSize: "25px", marginBottom:'10px' }}/>
                 <div className="cta-text">
                     <h4>Instagram</h4>
                     <span>@jmtecnodesing</span>
                 </div>
                 </div>
                 <div className="single-cta">
-                  <FaGoogle style={{fontSize: "30px" }}/>
+                  <FaTwitter style={{fontSize: "25px", marginBottom:'10px' }}/>
                   <div className="cta-text">
                     <h4>Instagram</h4>
                     <span>@jmtecnodesing</span>

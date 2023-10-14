@@ -1,8 +1,9 @@
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 .container-fluid {
-    max-width: 464px;
+    max-width: 364px;
     max-height: 100%;
+    cursor: pointer;
 }
 
 .card {
@@ -30,16 +31,20 @@
     display: flex;
 }
 
-.card h5 a {
+.card h5 {
     color: black;
     text-decoration: none;
 }
 
-.card-img-top {
+.imagen img {
     width: 100%;
     min-height: 250px;
     max-height: 340px;
+}
+
+.imagen {
     object-fit: contain;
+    position: relative;
 }
 
 .card:hover {
@@ -52,81 +57,161 @@
     position: absolute;
     background-color: var(--label-index);
     color: #fff;
-    padding: 5px 10px 5px 10px;
     font-size: 0.7rem;
     font-weight: 600;
     border-radius: 3px;
     text-transform: uppercase;
 }
 
-.card-talle a {
+.card-talle p {
     display: flex;
     color: #470668;
-    margin: 16px;
+    margin: 0px 16px;
 }
 
 .card-talle ul {
     display: flex;
+    margin: 5px;
 }
 
 .card-talle ul p {
     margin-right: 16px;
     background-color: #D3B2E3;
-    padding: 16px;
+    padding: 8px;
     border-radius: 4px;
     font-size: 14px;
 }
 
-.card-color ul img {
-    margin-right: 16px;
+.card-color ul {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
 }
-.card-color a {
+
+.card-color ul .uno {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-color: rgba(255, 0, 0, 0.479);
+    border-radius: 100px;
+    position: relative;
+}
+
+.card-color ul .dos {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-color: rgba(0, 0, 255, 0.514);
+    border-radius: 100px;
+    position: relative;
+}
+
+.card-color ul .tres {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-color: rgba(230, 192, 255, 0.616);
+    border-radius: 100px;
+    position: relative;
+}
+
+.card-color ul .cuatro {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-color: rgba(255, 255, 0, 0.603);
+    border-radius: 100px;
+    position: relative;
+}
+
+.card-color ul .cinco {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    background-color: rgba(0, 128, 0, 0.486);
+    border-radius: 100px;
+    position: relative;
+}
+
+.card-color p {
     display: flex;
     color: #470668;
-    margin: 16px;
+    margin: 0px 16px;
 }
 
 .card-price {
+    width: 100%;
     margin: 16px;
     color: #00D7C8;
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
 }
 
-.card-boton a{
+.card-boton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+
+.card-boton p {
+    width: 30%;
     background-color: #D3B2E3;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px 50px 5px 50px;
-
+    padding: 10px;
     border-radius: 50px;
+    text-align: center;
 }
 
-.card-boton a:hover {
+.card-boton p:hover {
     color: #D3B2E3;
     background-color: #470668;
 }
 
+.categoria p {
+    margin: 5px 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.corazon {
+    margin: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: red;
+}
+
 .card-title {
+    font-size: 30px;
     color: #470668;
-    justify-content: center;
-    display: flex;
+    text-align: center;
+    font-weight: bolder;
+    height: fit-content;
+    margin: 5px 0px 0px 0px;
 }
 
 .card-subtitle {
     color: #470668;
     justify-content: center;
     display: flex;
+    font-size: 18px;
+    font-weight: 600;
     margin: 16px;
 }
-
 
 .top-right {
     position: absolute;
     top: 24px;
     left: 24px;
-
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -227,31 +312,5 @@
 .amz-hp {
     font-size: 0.7rem;
     font-weight: 600;
-    color: darkgray;
-}
-
-.fa-question-circle:before {
-    /* content: "\f059"; */
-    color: darkgray;
-}
-
-.fa-heart:before {
-    color: crimson;
-}
-
-.far-fa-heart {
-    float: top;
-    color: crimson;
-    position: relative;
-    color: #fff;
-    top: 8px;
-    padding: 5px 10px 5px 10px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    border-radius: 3px;
-
-}
-
-.fa-chevron-circle-right:before {
     color: darkgray;
 }
